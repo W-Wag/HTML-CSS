@@ -1,0 +1,16 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20 px;
+}
+
+h1{
+    color: red;
+}
+h2{
+    color: blue;
+
+}
+p {
+    text-align: justify;
+}
