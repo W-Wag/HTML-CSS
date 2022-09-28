@@ -9,13 +9,31 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gainsboro;
+            
         }
         td, th{
         border: 1px solid black;
+        height: 50px;
+        width: 50px;
         }
         thead, tfoot{
-            background-color: gainsboro;
+            background-color: rgb(154, 152, 152);
             
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:rgb(154, 152, 152) ;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
         .numero{
             text-align: right;
@@ -27,12 +45,13 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
                 
             </tr>
         </thead>
         <tbody>
+            <caption>População das Unidades Federativas</caption>
             <tr>
                 <td>Sao Paulo</td>
                 <td class="numero">45 919 019</td>
@@ -65,12 +84,67 @@
                 <td>Ceara</td>
                 <td class="numero">9 240 580</td>
             </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8 777 124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 338 473</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="numero">7 206 589</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">7 153 262</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">4 269 995</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="numero">4 108 508</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">4 059 905</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3 567 234</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3 560 903</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3 365 351</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="numero">3 289 290</td>
+            </tr>
+            <tr>
+                <td>DF</td>
+                <td class="numero">3 094 225</td>
+            </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
-                <td class="numero"><strong>142 489 175</strong></td>
+            <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>188 170 034</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim maiores aperiam perferendis voluptas, porro ratione pariatur ipsam tempore quos necessitatibus vitae illum a blanditiis veritatis, hic molestias, reprehenderit excepturi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem temporibus nisi error, necessitatibus nobis maiores distinctio dolore ut quasi, culpa, labore dignissimos neque modi iure itaque doloremque iusto voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto officia nulla nobis cupiditate! Repellat quasi iusto ipsam. Molestiae dolorem commodi cumque quas impedit, quod culpa quisquam. Praesentium nostrum amet unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo tempora minima sint consectetur animi, iure praesentium. Quos quam, quas quia consectetur sint ullam ipsum, quae, sapiente cum maiores quis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim maiores aperiam perferendis voluptas, porro ratione pariatur ipsam tempore quos necessitatibus vitae illum a blanditiis veritatis, hic molestias, reprehenderit excepturi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem temporibus nisi error, necessitatibus nobis maiores distinctio dolore ut quasi, culpa, labore dignissimos neque modi iure itaque doloremque iusto voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto officia nulla nobis cupiditate! Repellat quasi iusto ipsam. Molestiae dolorem commodi cumque quas impedit, quod culpa quisquam. Praesentium nostrum amet unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo tempora minima sint consectetur animi, iure praesentium. Quos quam, quas quia consectetur sint ullam ipsum, quae, sapiente cum maiores quis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim maiores aperiam perferendis voluptas, porro ratione pariatur ipsam tempore quos necessitatibus vitae illum a blanditiis veritatis, hic molestias, reprehenderit excepturi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem temporibus nisi error, necessitatibus nobis maiores distinctio dolore ut quasi, culpa, labore dignissimos neque modi iure itaque doloremque iusto voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto officia nulla nobis cupiditate! Repellat quasi iusto ipsam. Molestiae dolorem commodi cumque quas impedit, quod culpa quisquam. Praesentium nostrum amet unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo tempora minima sint consectetur animi, iure praesentium. Quos quam, quas quia consectetur sint ullam ipsum, quae, sapiente cum maiores quis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim maiores aperiam perferendis voluptas, porro ratione pariatur ipsam tempore quos necessitatibus vitae illum a blanditiis veritatis, hic molestias, reprehenderit excepturi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem temporibus nisi error, necessitatibus nobis maiores distinctio dolore ut quasi, culpa, labore dignissimos neque modi iure itaque doloremque iusto voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto officia nulla nobis cupiditate! Repellat quasi iusto ipsam. Molestiae dolorem commodi cumque quas impedit, quod culpa quisquam. Praesentium nostrum amet unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo tempora minima sint consectetur animi, iure praesentium. Quos quam, quas quia consectetur sint ullam ipsum, quae, sapiente cum maiores quis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim maiores aperiam perferendis voluptas, porro ratione pariatur ipsam tempore quos necessitatibus vitae illum a blanditiis veritatis, hic molestias, reprehenderit excepturi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem temporibus nisi error, necessitatibus nobis maiores distinctio dolore ut quasi, culpa, labore dignissimos neque modi iure itaque doloremque iusto voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto officia nulla nobis cupiditate! Repellat quasi iusto ipsam. Molestiae dolorem commodi cumque quas impedit, quod culpa quisquam. Praesentium nostrum amet unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo tempora minima sint consectetur animi, iure praesentium. Quos quam, quas quia consectetur sint ullam ipsum, quae, sapiente cum maiores quis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim maiores aperiam perferendis voluptas, porro ratione pariatur ipsam tempore quos necessitatibus vitae illum a blanditiis veritatis, hic molestias, reprehenderit excepturi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem temporibus nisi error, necessitatibus nobis maiores distinctio dolore ut quasi, culpa, labore dignissimos neque modi iure itaque doloremque iusto voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto officia nulla nobis cupiditate! Repellat quasi iusto ipsam. Molestiae dolorem commodi cumque quas impedit, quod culpa quisquam. Praesentium nostrum amet unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo tempora minima sint consectetur animi, iure praesentium. Quos quam, quas quia consectetur sint ullam ipsum, quae, sapiente cum maiores quis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim maiores aperiam perferendis voluptas, porro ratione pariatur ipsam tempore quos necessitatibus vitae illum a blanditiis veritatis, hic molestias, reprehenderit excepturi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem temporibus nisi error, necessitatibus nobis maiores distinctio dolore ut quasi, culpa, labore dignissimos neque modi iure itaque doloremque iusto voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto officia nulla nobis cupiditate! Repellat quasi iusto ipsam. Molestiae dolorem commodi cumque quas impedit, quod culpa quisquam. Praesentium nostrum amet unde. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo tempora minima sint consectetur animi, iure praesentium. Quos quam, quas quia consectetur sint ullam ipsum, quae, sapiente cum maiores quis?</p>
     
 </body>
 </html>
