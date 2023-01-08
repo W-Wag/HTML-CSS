@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <legend>Sexo?</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esbasca" id="iesbasca" checked> <label for="iesbasca" >Basquete</label>
+            <input type="checkbox" name="esnata" id="iesnata"><label for="iesnata"> Natação</label>
+            <input type="checkbox" name="este" id="ieste"><label for="ieste"> Tenis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
