@@ -50,6 +50,9 @@ Abaixo irei colocar os certificados que foram conquistado a partir desse curso.
 
 ![image](https://github.com/W-Wag/HTML-CSS/assets/108705985/0f9856a0-c1a8-4d1c-8048-a5d3209b372c)
 
+![image](https://github.com/W-Wag/HTML-CSS/assets/108705985/42cf1a18-25b0-4617-947c-32f2d07a9cd1)
+
+
 
 
 ## Playlist de todos os módulos
